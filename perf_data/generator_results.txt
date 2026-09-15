@@ -1,0 +1,44 @@
+ Successfully read data for 1 stream/streams with 3 step/steps.
+*** Measurement Settings ***
+  Batch size: 1
+  Service Kind: TRITON
+  Using "time_windows" mode for stabilization
+  Stabilizing using p95latency and throughput
+  Measurement window: 30000 msec
+  Latency limit: 0 msec
+  Concurrency limit: 2 concurrent requests
+  Using synchronous calls for inference
+
+Request concurrency: 1
+  Client: 
+    Request count: 34
+    Throughput: 0.314793 infer/sec
+    p50 latency: 3838246 usec
+    p90 latency: 4227082 usec
+    p95 latency: 4237677 usec
+    p99 latency: 4334680 usec
+    Avg HTTP time: 3162082 usec (send/recv 100 usec + response wait 3161982 usec)
+  Server: 
+    Inference count: 34
+    Execution count: 34
+    Successful request count: 34
+    Avg request latency: 3161362 usec (overhead 8 usec + queue 47 usec + compute input 35 usec + compute infer 3161256 usec + compute output 15 usec)
+
+Request concurrency: 2
+  Client: 
+    Request count: 33
+    Throughput: 0.305533 infer/sec
+    p50 latency: 5786465 usec
+    p90 latency: 8232377 usec
+    p95 latency: 8445908 usec
+    p99 latency: 8571566 usec
+    Avg HTTP time: 6390220 usec (send/recv 137 usec + response wait 6390083 usec)
+  Server: 
+    Inference count: 33
+    Execution count: 33
+    Successful request count: 33
+    Avg request latency: 6389423 usec (overhead 7 usec + queue 3143426 usec + compute input 43 usec + compute infer 3245928 usec + compute output 18 usec)
+
+Inferences/Second vs. Client p95 Batch Latency
+Concurrency: 1, throughput: 0.314793 infer/sec, latency 4237677 usec
+Concurrency: 2, throughput: 0.305533 infer/sec, latency 8445908 usec

@@ -1,0 +1,24 @@
+# HELP nv_inference_count Number of inferences performed (does not include cached requests)
+# TYPE nv_inference_count counter
+nv_inference_count{model="embedder",version="1"} 16902
+nv_inference_count{model="orchestrator",version="1"} 7
+nv_inference_count{model="generator",version="1"} 83
+nv_inference_count{model="classifier",version="1"} 62354
+# HELP nv_inference_request_duration_us Cumulative inference request duration in microseconds (includes cached requests)
+# TYPE nv_inference_request_duration_us counter
+nv_inference_request_duration_us{model="embedder",version="1"} 377205619
+nv_inference_request_duration_us{model="orchestrator",version="1"} 17354085
+nv_inference_request_duration_us{model="generator",version="1"} 384437086
+nv_inference_request_duration_us{model="classifier",version="1"} 852704523
+# HELP nv_inference_queue_duration_us Cumulative inference queuing duration in microseconds (includes cached requests)
+# TYPE nv_inference_queue_duration_us counter
+nv_inference_queue_duration_us{model="embedder",version="1"} 223086788
+nv_inference_queue_duration_us{model="orchestrator",version="1"} 667
+nv_inference_queue_duration_us{model="generator",version="1"} 109722808
+nv_inference_queue_duration_us{model="classifier",version="1"} 435180252
+# HELP nv_inference_compute_infer_duration_us Cumulative compute inference duration in microseconds (does not include cached requests)
+# TYPE nv_inference_compute_infer_duration_us counter
+nv_inference_compute_infer_duration_us{model="embedder",version="1"} 153303590
+nv_inference_compute_infer_duration_us{model="orchestrator",version="1"} 17352902
+nv_inference_compute_infer_duration_us{model="generator",version="1"} 274708815
+nv_inference_compute_infer_duration_us{model="classifier",version="1"} 389626876

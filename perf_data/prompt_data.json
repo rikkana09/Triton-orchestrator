@@ -1,0 +1,7 @@
+{
+  "data": [
+    { "prompt": ["Question: What is AI?\nAnswer:"] },
+    { "prompt": ["Question: What is Python?\nAnswer:"] },
+    { "prompt": ["Question: What is deep learning?\nAnswer:"] }
+  ]
+}
